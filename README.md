@@ -1,6 +1,6 @@
 # Align and Attend: Multimodal Summarization with Dual Contrastive Losses (CVPR2023)
-### [Project Page](https://boheumd.github.io/A2Summ/) | [Paper](https://arxiv.org/abs/2303.07284)
-The official repository of our paper "**Align and Attend: Multimodal Summarization with Dual Contrastive Losses**".
+### [Paper](https://arxiv.org/abs/2303.07284)
+My repository of the paper "**Align and Attend: Multimodal Summarization with Dual Contrastive Losses**".
 
 <p align="center">
 <img src="figs/teaser.png" alt="teaser" width="80%">
@@ -25,8 +25,8 @@ pip install scipy ortools h5py pyyaml
 ```
 
 ## Dataset
-We evaluate our A2Summ on two multimodal summarization multimodal output datasets ([CNN, Daily_Mail](https://aclanthology.org/2021.naacl-main.473.pdf)) and two standard video summarization datasets ([SumMe](https://gyglim.github.io/me/papers/GygliECCV14_vsum.pdf), [TVSum](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Song_TVSum_Summarizing_Web_2015_CVPR_paper.pdf)).
-We also collected a large-scale multimodal summarization dataset BLiSS which consists of livestream videos and transcripts with annotated summary.
+I have evaluated the Aspect-Aware Summarization (A2Summ) on two multimodal summarization multimodal output datasets ([CNN, Daily_Mail](https://aclanthology.org/2021.naacl-main.473.pdf)) and two standard video summarization datasets ([SumMe](https://gyglim.github.io/me/papers/GygliECCV14_vsum.pdf), [TVSum](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Song_TVSum_Summarizing_Web_2015_CVPR_paper.pdf)).
+I also collected a large-scale multimodal summarization dataset BLiSS which consists of livestream videos and transcripts with annotated summary.
 Before running the code, please download the pre-processed datasets from [google drive link](https://drive.google.com/drive/folders/1rqXEIelRzq4mb7NaBk3GXxh7jlfP_Snm?usp=share_link).
 Unzip it under the `data/` folder and make sure the data structure is as below.
 
@@ -52,13 +52,12 @@ Unzip it under the `data/` folder and make sure the data structure is as below.
 
    ```
 ### BLiSS Dataset
-For the BLiSS dataset, due to the copyright issue, we only provide the extracted video/thumbnail features instead of the original videos/thunmbnails. If you need access to the original videos, please email me (bohe@umd.edu) for the public URLs of each video.
-
+For the BLiSS dataset, due to the copyright issue, I have only provide the extracted video/thumbnail features instead of the original videos/thunmbnails. 
 
 ## Running
 
 ### Training
-We train the model on a single GTX-1080ti GPU. To train the model on different dataset, please execute the following command.
+I have trained the model on a single GTX-1080ti GPU. To train the model on different dataset, please execute the following command.
 ```bash
 python train.py --dataset ${dataset}
 ```
@@ -72,20 +71,8 @@ python train.py --dataset ${dataset} \
 ```
 
 
-## Citation
-If you find our code or our paper useful for your research, please **[★star]** this repo and **[cite]** the following paper:
-
-```latex
-@inproceedings{he2023a2summ,
-  title = {Align and Attend: Multimodal Summarization with Dual Contrastive Losses},
-  author={He, Bo and Wang, Jun and Qiu, Jielin and Bui, Trung and Shrivastava, Abhinav and Wang, Zhaowen},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2023}
-}
-```
-
 ## Acknowledgement
-We referenced the repos below for the code
+I have referenced the repos below for the code
 - [DSNet](https://github.com/li-plus/DSNet)
 - [UMT](https://github.com/TencentARC/UMT)
 
